@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-let SOURCE_CODE_URL = "https://github.com/maito94/smart-cappuccino-web"
+let SOURCE_CODE_URL = "https://github.com/maito94/SmartCappuccino"
 let BUY_URL = "https://smartcappuccino.io/buy"
 
 class AboutWindow: NSWindowController {
