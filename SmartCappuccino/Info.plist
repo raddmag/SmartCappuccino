@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
@@ -27,7 +27,7 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSAppleEventsUsageDescription</key>
-	<string>Cappuccino needs permission for System Events in order to correctly update appearance settings.</string>
+	<string>SmartCappuccino needs permission for System Events in order to correctly update appearance settings.</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 Mario Garcia. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>

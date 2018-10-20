@@ -20,6 +20,6 @@ struct AppVersion {
     static func fullVersionString() -> String? {
         guard let version = version() else { return nil }
         guard let build = build() else { return version }
-        return "\(version) (\(build))"
+        return "\(version).\(build)"
     }
 }
