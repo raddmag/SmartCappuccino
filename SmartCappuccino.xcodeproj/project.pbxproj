@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC066DAA217AE7310087043B /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC066DA8217AE7310087043B /* AboutWindow.swift */; };
+		AC066DAB217AE7310087043B /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC066DA9217AE7310087043B /* AboutWindow.xib */; };
+		AC066DAD217AF0870087043B /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC066DAC217AF0870087043B /* AppVersion.swift */; };
+		ACA4F8C62171EF61008A3983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8C52171EF61008A3983 /* AppDelegate.swift */; };
+		ACA4F8CA2171EF62008A3983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA4F8C92171EF62008A3983 /* Assets.xcassets */; };
+		ACA4F8CD2171EF62008A3983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA4F8CB2171EF62008A3983 /* Main.storyboard */; };
+		ACA4F8D92171EF62008A3983 /* CappuccinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8D82171EF62008A3983 /* CappuccinoTests.swift */; };
+		ACA4F8E42171EF62008A3983 /* CappuccinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8E32171EF62008A3983 /* CappuccinoUITests.swift */; };
+		ACA4F8F32171EFB7008A3983 /* Cappuccino.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8F22171EFB7008A3983 /* Cappuccino.swift */; };
+		ACA4F8F52171EFDE008A3983 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8F42171EFDE008A3983 /* EventMonitor.swift */; };
+		ACA4F8F72171EFF3008A3983 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8F62171EFF3008A3983 /* RepeatingTimer.swift */; };
+		ACA4F8FA2171F01B008A3983 /* AppleScriptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F8F92171F01B008A3983 /* AppleScriptManager.swift */; };
+		ACA4F8FD2171F04E008A3983 /* ToggleAppearanceMode.scpt in Resources */ = {isa = PBXBuildFile; fileRef = ACA4F8FC2171F04E008A3983 /* ToggleAppearanceMode.scpt */; };
+		ACA4F8FF2171F07A008A3983 /* IsDarkMode.scpt in Resources */ = {isa = PBXBuildFile; fileRef = ACA4F8FE2171F07A008A3983 /* IsDarkMode.scpt */; };
+		ACA4F9032171F139008A3983 /* CappuccinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F9022171F139008A3983 /* CappuccinoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA4F8D52171EF62008A3983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA4F8BA2171EF61008A3983 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4F8C12171EF61008A3983;
+			remoteInfo = Cappuccino;
+		};
+		ACA4F8E02171EF62008A3983 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA4F8BA2171EF61008A3983 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4F8C12171EF61008A3983;
+			remoteInfo = Cappuccino;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC066DA8217AE7310087043B /* AboutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
+		AC066DA9217AE7310087043B /* AboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		AC066DAC217AF0870087043B /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		ACA4F8C22171EF61008A3983 /* SmartCappuccino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCappuccino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4F8C52171EF61008A3983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACA4F8C92171EF62008A3983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA4F8CC2171EF62008A3983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACA4F8CE2171EF62008A3983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA4F8CF2171EF62008A3983 /* SmartCappuccino.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartCappuccino.entitlements; sourceTree = "<group>"; };
+		ACA4F8D42171EF62008A3983 /* SmartCappuccinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCappuccinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4F8D82171EF62008A3983 /* CappuccinoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappuccinoTests.swift; sourceTree = "<group>"; };
+		ACA4F8DA2171EF62008A3983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA4F8DF2171EF62008A3983 /* SmartCappuccinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCappuccinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4F8E32171EF62008A3983 /* CappuccinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappuccinoUITests.swift; sourceTree = "<group>"; };
+		ACA4F8E52171EF62008A3983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA4F8F22171EFB7008A3983 /* Cappuccino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cappuccino.swift; sourceTree = "<group>"; };
+		ACA4F8F42171EFDE008A3983 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		ACA4F8F62171EFF3008A3983 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		ACA4F8F92171F01B008A3983 /* AppleScriptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptManager.swift; sourceTree = "<group>"; };
+		ACA4F8FC2171F04E008A3983 /* ToggleAppearanceMode.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToggleAppearanceMode.scpt; sourceTree = "<group>"; };
+		ACA4F8FE2171F07A008A3983 /* IsDarkMode.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = IsDarkMode.scpt; sourceTree = "<group>"; };
+		ACA4F9022171F139008A3983 /* CappuccinoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappuccinoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA4F8BF2171EF61008A3983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F8D12171EF62008A3983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F8DC2171EF62008A3983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC066DA6217AE6B90087043B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F9022171F139008A3983 /* CappuccinoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AC066DA7217AE7050087043B /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				AC066DA8217AE7310087043B /* AboutWindow.swift */,
+				AC066DA9217AE7310087043B /* AboutWindow.xib */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		ACA4F8B92171EF61008A3983 = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8C42171EF61008A3983 /* SmartCappuccino */,
+				ACA4F8D72171EF62008A3983 /* CappuccinoTests */,
+				ACA4F8E22171EF62008A3983 /* CappuccinoUITests */,
+				ACA4F8C32171EF61008A3983 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA4F8C32171EF61008A3983 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8C22171EF61008A3983 /* SmartCappuccino.app */,
+				ACA4F8D42171EF62008A3983 /* SmartCappuccinoTests.xctest */,
+				ACA4F8DF2171EF62008A3983 /* SmartCappuccinoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA4F8C42171EF61008A3983 /* SmartCappuccino */ = {
+			isa = PBXGroup;
+			children = (
+				AC066DA7217AE7050087043B /* Windows */,
+				AC066DA6217AE6B90087043B /* ViewControllers */,
+				ACA4F8F82171F009008A3983 /* Controllers */,
+				ACA4F8F12171EF96008A3983 /* Models */,
+				ACA4F8FB2171F031008A3983 /* Scripts */,
+				ACA4F8C52171EF61008A3983 /* AppDelegate.swift */,
+				ACA4F8C92171EF62008A3983 /* Assets.xcassets */,
+				ACA4F8CB2171EF62008A3983 /* Main.storyboard */,
+				ACA4F8CE2171EF62008A3983 /* Info.plist */,
+				ACA4F8CF2171EF62008A3983 /* SmartCappuccino.entitlements */,
+			);
+			path = SmartCappuccino;
+			sourceTree = "<group>";
+		};
+		ACA4F8D72171EF62008A3983 /* CappuccinoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8D82171EF62008A3983 /* CappuccinoTests.swift */,
+				ACA4F8DA2171EF62008A3983 /* Info.plist */,
+			);
+			path = CappuccinoTests;
+			sourceTree = "<group>";
+		};
+		ACA4F8E22171EF62008A3983 /* CappuccinoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8E32171EF62008A3983 /* CappuccinoUITests.swift */,
+				ACA4F8E52171EF62008A3983 /* Info.plist */,
+			);
+			path = CappuccinoUITests;
+			sourceTree = "<group>";
+		};
+		ACA4F8F12171EF96008A3983 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8F22171EFB7008A3983 /* Cappuccino.swift */,
+				ACA4F8F42171EFDE008A3983 /* EventMonitor.swift */,
+				ACA4F8F62171EFF3008A3983 /* RepeatingTimer.swift */,
+				AC066DAC217AF0870087043B /* AppVersion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACA4F8F82171F009008A3983 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8F92171F01B008A3983 /* AppleScriptManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACA4F8FB2171F031008A3983 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F8FC2171F04E008A3983 /* ToggleAppearanceMode.scpt */,
+				ACA4F8FE2171F07A008A3983 /* IsDarkMode.scpt */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA4F8C12171EF61008A3983 /* SmartCappuccino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4F8E82171EF62008A3983 /* Build configuration list for PBXNativeTarget "SmartCappuccino" */;
+			buildPhases = (
+				ACA4F8BE2171EF61008A3983 /* Sources */,
+				ACA4F8BF2171EF61008A3983 /* Frameworks */,
+				ACA4F8C02171EF61008A3983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCappuccino;
+			productName = Cappuccino;
+			productReference = ACA4F8C22171EF61008A3983 /* SmartCappuccino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA4F8D32171EF62008A3983 /* SmartCappuccinoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4F8EB2171EF62008A3983 /* Build configuration list for PBXNativeTarget "SmartCappuccinoTests" */;
+			buildPhases = (
+				ACA4F8D02171EF62008A3983 /* Sources */,
+				ACA4F8D12171EF62008A3983 /* Frameworks */,
+				ACA4F8D22171EF62008A3983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4F8D62171EF62008A3983 /* PBXTargetDependency */,
+			);
+			name = SmartCappuccinoTests;
+			productName = CappuccinoTests;
+			productReference = ACA4F8D42171EF62008A3983 /* SmartCappuccinoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACA4F8DE2171EF62008A3983 /* SmartCappuccinoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4F8EE2171EF62008A3983 /* Build configuration list for PBXNativeTarget "SmartCappuccinoUITests" */;
+			buildPhases = (
+				ACA4F8DB2171EF62008A3983 /* Sources */,
+				ACA4F8DC2171EF62008A3983 /* Frameworks */,
+				ACA4F8DD2171EF62008A3983 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4F8E12171EF62008A3983 /* PBXTargetDependency */,
+			);
+			name = SmartCappuccinoUITests;
+			productName = CappuccinoUITests;
+			productReference = ACA4F8DF2171EF62008A3983 /* SmartCappuccinoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA4F8BA2171EF61008A3983 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Mario Garcia";
+				TargetAttributes = {
+					ACA4F8C12171EF61008A3983 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					ACA4F8D32171EF62008A3983 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = ACA4F8C12171EF61008A3983;
+					};
+					ACA4F8DE2171EF62008A3983 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = ACA4F8C12171EF61008A3983;
+					};
+				};
+			};
+			buildConfigurationList = ACA4F8BD2171EF61008A3983 /* Build configuration list for PBXProject "SmartCappuccino" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA4F8B92171EF61008A3983;
+			productRefGroup = ACA4F8C32171EF61008A3983 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA4F8C12171EF61008A3983 /* SmartCappuccino */,
+				ACA4F8D32171EF62008A3983 /* SmartCappuccinoTests */,
+				ACA4F8DE2171EF62008A3983 /* SmartCappuccinoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA4F8C02171EF61008A3983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F8FD2171F04E008A3983 /* ToggleAppearanceMode.scpt in Resources */,
+				ACA4F8CA2171EF62008A3983 /* Assets.xcassets in Resources */,
+				AC066DAB217AE7310087043B /* AboutWindow.xib in Resources */,
+				ACA4F8FF2171F07A008A3983 /* IsDarkMode.scpt in Resources */,
+				ACA4F8CD2171EF62008A3983 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F8D22171EF62008A3983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F8DD2171EF62008A3983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA4F8BE2171EF61008A3983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F8C62171EF61008A3983 /* AppDelegate.swift in Sources */,
+				ACA4F8F32171EFB7008A3983 /* Cappuccino.swift in Sources */,
+				AC066DAD217AF0870087043B /* AppVersion.swift in Sources */,
+				ACA4F9032171F139008A3983 /* CappuccinoViewController.swift in Sources */,
+				ACA4F8F52171EFDE008A3983 /* EventMonitor.swift in Sources */,
+				ACA4F8F72171EFF3008A3983 /* RepeatingTimer.swift in Sources */,
+				AC066DAA217AE7310087043B /* AboutWindow.swift in Sources */,
+				ACA4F8FA2171F01B008A3983 /* AppleScriptManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F8D02171EF62008A3983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F8D92171EF62008A3983 /* CappuccinoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F8DB2171EF62008A3983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F8E42171EF62008A3983 /* CappuccinoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA4F8D62171EF62008A3983 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4F8C12171EF61008A3983 /* SmartCappuccino */;
+			targetProxy = ACA4F8D52171EF62008A3983 /* PBXContainerItemProxy */;
+		};
+		ACA4F8E12171EF62008A3983 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4F8C12171EF61008A3983 /* SmartCappuccino */;
+			targetProxy = ACA4F8E02171EF62008A3983 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACA4F8CB2171EF62008A3983 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACA4F8CC2171EF62008A3983 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACA4F8E62171EF62008A3983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACA4F8E72171EF62008A3983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ACA4F8E92171EF62008A3983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartCappuccino/SmartCappuccino.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27D27Q93EJ;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartCappuccino/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.mag399.SmartCappuccino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		ACA4F8EA2171EF62008A3983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartCappuccino/SmartCappuccino.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27D27Q93EJ;
+				INFOPLIST_FILE = "$(SRCROOT)/SmartCappuccino/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.mag399.SmartCappuccino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		ACA4F8EC2171EF62008A3983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27D27Q93EJ;
+				INFOPLIST_FILE = CappuccinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.mag399.CappuccinoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCappuccino.app/Contents/MacOS/SmartCappuccino";
+			};
+			name = Debug;
+		};
+		ACA4F8ED2171EF62008A3983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27D27Q93EJ;
+				INFOPLIST_FILE = CappuccinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.mag399.CappuccinoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCappuccino.app/Contents/MacOS/SmartCappuccino";
+			};
+			name = Release;
+		};
+		ACA4F8EF2171EF62008A3983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27D27Q93EJ;
+				INFOPLIST_FILE = CappuccinoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.mag399.CappuccinoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Cappuccino;
+			};
+			name = Debug;
+		};
+		ACA4F8F02171EF62008A3983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 27D27Q93EJ;
+				INFOPLIST_FILE = CappuccinoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.mag399.CappuccinoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Cappuccino;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA4F8BD2171EF61008A3983 /* Build configuration list for PBXProject "SmartCappuccino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F8E62171EF62008A3983 /* Debug */,
+				ACA4F8E72171EF62008A3983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4F8E82171EF62008A3983 /* Build configuration list for PBXNativeTarget "SmartCappuccino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F8E92171EF62008A3983 /* Debug */,
+				ACA4F8EA2171EF62008A3983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4F8EB2171EF62008A3983 /* Build configuration list for PBXNativeTarget "SmartCappuccinoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F8EC2171EF62008A3983 /* Debug */,
+				ACA4F8ED2171EF62008A3983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4F8EE2171EF62008A3983 /* Build configuration list for PBXNativeTarget "SmartCappuccinoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F8EF2171EF62008A3983 /* Debug */,
+				ACA4F8F02171EF62008A3983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA4F8BA2171EF61008A3983 /* Project object */;
+}
